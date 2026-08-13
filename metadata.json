@@ -1,0 +1,6 @@
+{
+  "name": "Student Voices of Africa",
+  "description": "A safe space for students across Africa to share struggles, find hope, receive counseling guidance, and connect with peer mentors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

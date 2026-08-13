@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-church",
+      "description": "Our Vision - Building a better tomorrow",
+      "imageUrl": "/images/img1.jpg",
+      "imageHint": "student vision"
+    },
+    {
+      "id": "live-stream",
+      "description": "Live student gathering view",
+      "imageUrl": "/images/img6.jpg",
+      "imageHint": "student gathering"
+    },
+    {
+      "id": "worship-band",
+      "description": "Student leadership group",
+      "imageUrl": "/images/img7.jpg",
+      "imageHint": "student leaders"
+    },
+    {
+      "id": "community-gathering",
+      "description": "Students gathered in hall",
+      "imageUrl": "/images/img8.jpg",
+      "imageHint": "student community"
+    },
+    {
+      "id": "scripture-study",
+      "description": "Peer mentorship session",
+      "imageUrl": "/images/img10.jpg",
+      "imageHint": "mentorship"
+    },
+    {
+      "id": "pastor-florence",
+      "description": "SVA Student Advocate",
+      "imageUrl": "/images/img2.jpeg",
+      "imageHint": "student advocate"
+    },
+    {
+      "id": "director-rodgers",
+      "description": "Atugonza Rodgers - Founder & Executive Director",
+      "imageUrl": "/images/atugonza_rodgers.jpg",
+      "imageHint": "founder director"
+    },
+    {
+      "id": "creative-geoffrey",
+      "description": "Sebalamu Geoffrey - Outreach",
+      "imageUrl": "/images/img3.jpeg",
+      "imageHint": "man leader"
+    },
+    {
+      "id": "about-history",
+      "description": "SVA Foundation History",
+      "imageUrl": "/images/img6.jpg",
+      "imageHint": "student history"
+    }
+  ]
+}

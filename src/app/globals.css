@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 243 22% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 243 22% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 243 22% 10%;
+    --primary: 243 22% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 326 64% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 243 10% 96%;
+    --muted-foreground: 243 15% 45%;
+    --accent: 326 64% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 243 15% 90%;
+    --input: 243 15% 90%;
+    --ring: 326 64% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+:root {
+  --font-headline: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes revealSlideRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.reveal-mask-animation {
+  animation: revealSlideRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Kinetic Typography Animations */
+@keyframes kineticReveal {
+  from {
+    transform: translateY(105%) skewY(6deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) skewY(0);
+    opacity: 1;
+  }
+}
+
+.kinetic-animate {
+  animation: kineticReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Ink Flow Animations */
+@keyframes inkFlow {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
+}
+
+.ink-flow-mask {
+  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 60%);
+  mask-image: linear-gradient(to right, black 40%, transparent 60%);
+  -webkit-mask-size: 250% 100%;
+  mask-size: 250% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+}
+
+.ink-flow-active {
+  animation: inkFlow 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Blur to Focus Animation */
+@keyframes blurFocus {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.blur-focus-active {
+  animation: blurFocus 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(45, 43, 68, 0.7) 0%, rgba(45, 43, 68, 0.85) 100%);
+}
